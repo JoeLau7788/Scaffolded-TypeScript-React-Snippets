@@ -1,6 +1,9 @@
 {
   "name": "scaffolded---typescript---react-snippets",
   "displayName": "Scaffolded - TypeScript & React Snippets",
+  "scripts": {
+    "package": "mkdir -p dist && node -e \"const v=require('./package.json').version; require('child_process').execSync('npx @vscode/vsce package --out dist/scaffolded-typescript-react-snippets-' + v + '.vsix', {stdio:'inherit'})\""
+  },
   "description": "Curated TypeScript and React (TSX) snippets: component scaffolds, hooks, context, section tags, Zustand store, and GraphQL helpers.",
   "publisher": "JoeLau",
   "version": "0.0.3",
