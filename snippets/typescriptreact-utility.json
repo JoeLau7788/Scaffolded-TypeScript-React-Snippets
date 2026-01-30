@@ -1,0 +1,22 @@
+{
+  "Console Log": {
+    "prefix": "clg",
+    "body": ["console.log(${1:Tag Name});"]
+  },
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "const ${1:functionName} = useCallback((${2}) => {",
+      "\t${0:// Enter your callbacks here}",
+      "}, []);"
+    ]
+  },
+  "useMemo": {
+    "prefix": "umm",
+    "body": [
+      "const ${1:functionName} = useMemo(() => {",
+      "\t${0:// Return your value here}",
+      "}, []);"
+    ]
+  }
+}

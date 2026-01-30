@@ -1,0 +1,51 @@
+{
+  "Type Scaffold": {
+    "prefix": "scaf",
+    "body": [
+      "/**",
+      " * ===========================",
+      " * MAIN",
+      " * ===========================",
+      " */",
+      "export type ${1:ComponentName}Props = {",
+      "  // Put your props here$0",
+      "};",
+      "",
+      "/**",
+      " * ===========================",
+      " * EXPORTS",
+      " * ===========================",
+      " */",
+      "export default ${1:ComponentName}Props;",
+      ""
+    ]
+  },
+  "Zustand Store Template": {
+    "prefix": "zs",
+    "body": [
+      "import { create } from 'zustand';",
+      "",
+      "export type ${1:Store}State = {",
+      "  // Add states here${0}",
+      "};",
+      "",
+      "/**",
+      " * ===========================",
+      " * MAIN",
+      " * ===========================",
+      " */",
+      "",
+      "export const use${1:Store}Store = create<${1:Store}State>()((set) => ({",
+      "  // Return states here",
+      "}));",
+      "",
+      "/**",
+      " * ===========================",
+      " * HOOKS",
+      " * ===========================",
+      " */",
+      "export default use${1:Store}Store;"
+    ],
+    "description": "Create a Zustand store with typed state"
+  }
+}

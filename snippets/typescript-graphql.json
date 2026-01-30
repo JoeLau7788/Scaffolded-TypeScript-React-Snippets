@@ -1,0 +1,47 @@
+{
+  "graphql": {
+    "prefix": "g",
+    "body": [
+      "export const ${1}Document = graphql(`",
+      "\tquery ${1} {",
+      "\t\t${1} {",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t}",
+      "`);"
+    ]
+  },
+  "graphql query (paginated)": {
+    "prefix": "gqp",
+    "body": [
+      "export const ${1:QueryName}Document = graphql(/* GraphQL */`",
+      "\tquery ${1:QueryName}(",
+      "\t\t\\$input: ${1:QueryName}Input!",
+      "\t\t\\$first: Int! = 15",
+      "\t\t\\$page: Int",
+      "\t) {",
+      "\t\t${1:QueryName}(input: \\$input, first: \\$first, page: \\$page) {",
+      "\t\t\tpaginatorInfo {",
+      "\t\t\t\t...PaginatorInfo",
+      "\t\t\t}",
+      "\t\t\tdata {",
+      "\t\t\t\t${0}",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "`);"
+    ]
+  },
+  "graphql mutation": {
+    "prefix": "gm",
+    "body": [
+      "export const ${1}Document = graphql(/* GraphQL */`",
+      "\tmutation ${1}(\\$${2:input}: ${1}Input!${3}) {",
+      "\t\t${1}(${2:input}: \\$${2:input}) {",
+      "\t\t\t...SuccessResponse${0}",
+      "\t\t}",
+      "\t}",
+      "`);"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"Big Tag": {
+		"prefix": "t1",
+		"body": [
+			"/**",
+			" * ===========================",
+			" * ${1:Tag Name}",
+			" * ===========================",
+			" */",
+			"${0}",
+		],
+		"description": "Main tsx tag, used for big section like `MAIN` and `EXPORTS`"
+	},
+	"Small Tag (Simple)": {
+		"prefix": "t2",
+		"body": [
+			"// =============== ${1:Tag Name}",
+		],
+		"description": "Secondary tsx tag, used for smaller section like `HOOKS`, `APIs`, `VARIABLES`, `EVENTS`, `RENDERER`, `VIEWS`",
+	},
+	"Small Tag (Region)": {
+		"prefix": "t2R",
+		"body": [
+			"// #region ============== ${1:Tag Name}\n// #endregion",
+		],
+		"description": "Secondary tsx tag, used for smaller section like `HOOKS`, `APIs`, `VARIABLES`, `EVENTS`, `RENDERER`, `VIEWS`",
+	},
+}
