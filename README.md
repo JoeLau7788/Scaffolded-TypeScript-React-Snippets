@@ -83,3 +83,11 @@ const MyComponentView = (props: MyComponentProps) => {
   // =============== VIEWS
   return <></>;
 };
+
+```
+
+---
+
+## 📄 License
+
+MIT © 2026 Joe Lau

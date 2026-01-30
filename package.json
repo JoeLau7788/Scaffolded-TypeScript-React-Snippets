@@ -17,6 +17,11 @@
     "scaffold",
     "boilerplate"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeLau7788/Scaffolded-TypeScript-React-Snippets.git"
+  },
+  "license": "MIT",
   "contributes": {
     "snippets": [
       {
