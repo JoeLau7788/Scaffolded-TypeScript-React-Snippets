@@ -3,9 +3,9 @@
   "displayName": "Scaffolded - TypeScript & React Snippets",
   "description": "Curated TypeScript and React (TSX) snippets: component scaffolds, hooks, context, section tags, Zustand store, and GraphQL helpers.",
   "publisher": "JoeLau",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
-    "vscode": "^1.108.1"
+    "vscode": "^1.0.0"
   },
   "categories": [
     "Snippets"
