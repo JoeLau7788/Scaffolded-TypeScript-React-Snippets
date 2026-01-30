@@ -3,7 +3,7 @@
   "displayName": "Scaffolded - TypeScript & React Snippets",
   "description": "Curated TypeScript and React (TSX) snippets: component scaffolds, hooks, context, section tags, Zustand store, and GraphQL helpers.",
   "publisher": "JoeLau",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.108.1"
   },
@@ -21,6 +21,7 @@
     "type": "git",
     "url": "https://github.com/JoeLau7788/Scaffolded-TypeScript-React-Snippets.git"
   },
+  "icon": "images/icon.png",
   "license": "MIT",
   "contributes": {
     "snippets": [
